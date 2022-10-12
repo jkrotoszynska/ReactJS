@@ -1,21 +1,16 @@
 class Human {
-    constructor() {
-        this.gender = 'female';
-    }
+    gender = 'female';
 
-    printGender() {
+    printGender = () => {
         console.log(this.gender);
     }
 }
 
 class Person extends Human {
-    constructor(){
-        super();
-        this.name = 'Max';
-        this.gender = 'male'
-    }
+    name = 'Max';
+    gender = 'male'
 
-    printName(){
+    printName = () => {
         console.log(this.name);
     }
 }
